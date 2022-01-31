@@ -9,16 +9,16 @@
 }
 
 :root {
-    --cor0: #EBE5C5;
-    --cor1: #83E1AD;
-    --cor2: #3DDC84;
-    --cor3: #2FA866;
-    --cor4: #1A5C37;
-    --cor5: #063D1E;
+    --clr-beige: #EBE5C5;
+    --clr-green1: #83E1AD;
+    --clr-green2: #3DDC84;
+    --clr-green3: #2FA866;
+    --clr-green4: #1A5C37;
+    --clr-green5: #063D1E;
 
-    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: 'Bebas Neue', cursive;
-    --fonte-android: 'Android', cursive;
+    --fonts-default: Arial, Verdana, Helvetica, sans-serif;
+    --fonts-handwritten1: 'Bebas Neue', cursive;
+    --fonts-handwritten2: 'Android', cursive;
 }
 
 * {
@@ -27,8 +27,8 @@
 }
 
 body {
-    background-color: var(--cor0);
-    font-family: var(--fonte-padrao);
+    background-color: var(--clr-beige);
+    font-family: var(--fonts-default);
 }
 
 a.externo::after {
@@ -36,7 +36,7 @@ a.externo::after {
 }
 
 header {
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    background-image: linear-gradient(to bottom, var(--clr-green3), var(--clr-green5));
     min-height: 150px;
     text-align: center;
     padding-top: 30px;
@@ -44,7 +44,7 @@ header {
 
 header > h1 {
     color: white;
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonts-handwritten1);
     font-size: 3em;
     font-weight: normal;
     margin-bottom: 20px;
@@ -52,7 +52,7 @@ header > h1 {
 }
 
 header > p {
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonts-default);
     font-size: 1.2em;
     color: white;
     max-width: 500px;
@@ -63,13 +63,13 @@ header > p {
 }
 
 nav {
-    background-color: var(--cor5);
+    background-color: var(--clr-green5);
     padding: 10px;
     box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.45);
 }
 
 nav > a {
-    color: var(--cor1);
+    color: var(--clr-green1);
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -79,8 +79,8 @@ nav > a {
 }
 
 nav > a:hover {
-    background-color: var(--cor3);
-    color: var(--cor5);
+    background-color: var(--clr-green3);
+    color: var(--clr-green5);
 }
 
 main {
@@ -95,18 +95,18 @@ main {
 }
 
 main h1 {
-    color: var(--cor5);
-    font-family: var(--fonte-android);
+    color: var(--clr-green5);
+    font-family: var(--fonts-handwritten2);
     font-size: 1.8em;
     font-weight: normal;
 }
 
 main h2 {
-    font-family: var(--fonte-android);
-    color: var(--cor4);
+    font-family: var(--fonts-handwritten2);
+    color: var(--clr-green4);
     font-size: 1.3em;
     font-weight: normal;
-    background-image: linear-gradient(to right, var(--cor1), transparent);
+    background-image: linear-gradient(to right, var(--clr-green1), transparent);
     text-indent: 8px;
 }
 
@@ -119,15 +119,15 @@ main p {
 }
 
 main strong {
-    color: var(--cor4);
+    color: var(--clr-green4);
     font-weight: bold;
 }
 
 main a, aside a {
     text-decoration: none;
     font-weight: bold;
-    color: var(--cor5);
-    background-color: var(--cor1);
+    color: var(--clr-green5);
+    background-color: var(--clr-green1);
     padding: 2px 6px;
 }
 
@@ -137,7 +137,7 @@ main img {
 
 main a:hover {
     text-decoration: underline;
-    color: var(--cor4);
+    color: var(--clr-green4);
 }
 
 main img.pequena {
@@ -147,7 +147,7 @@ main img.pequena {
 }
 
 div.video {
-    background-color: var(--cor5);
+    background-color: var(--clr-green5);
     margin: 0px -20px 30px -20px;
     padding: 20px;
     padding-bottom: 57%;
@@ -163,7 +163,7 @@ div.video > iframe {
 }
 
 footer {
-    background-color: var(--cor5);
+    background-color: var(--clr-green5);
     color: white;
     text-align: center;
     font-size: 0.8em;
@@ -171,13 +171,13 @@ footer {
 }
 
 aside {
-    background-color: var(--cor1);
+    background-color: var(--clr-green1);
     padding: 10px;
     border-radius: 10px;
 }
 
 aside > h3 {
-    background-color: var(--cor4);
+    background-color: var(--clr-green4);
     color: white;
     padding: 10px;
     margin: -10px -10px 0px -10px;
@@ -199,5 +199,5 @@ footer > p > a {
 
 footer a:hover {
     text-decoration: underline;
-    color: var(--cor1);
+    color: var(--clr-green1);
 }
